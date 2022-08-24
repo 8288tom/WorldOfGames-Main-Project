@@ -31,4 +31,7 @@ def play(difficulty):
     difficulty = secret_number[1]
     user_guess = get_guess_from_user(difficulty)
     result = compare_result(user_guess, secret_number[0])
-    return print(f'Won: {result}, Secret number was: {secret_number[0]}, Your guess: {user_guess}')
+    if result:
+        return 1
+    else:
+        return 0

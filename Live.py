@@ -3,12 +3,15 @@ import MemoryGame
 import CurrencyRouletteGame
 from pyfiglet import Figlet
 import termcolor
+from Score import add_score
+
 
 def welcome(name):
-    f= Figlet(font='starwars', width=250)
+    f = Figlet(font='slant', width=250, justify="center")
     name = str(name)
-    greeting =f.renderText(f"Hello {name} and welcome\nto the World of Games\nHere you will find many cool games to play.")
-    colored_greeting=termcolor.colored(greeting, "yellow")
+    greeting = f.renderText(
+        f"Hello {name} and welcome\nto the World of Games\nHere you will find many cool games to play.")
+    colored_greeting = termcolor.colored(greeting, "cyan")
     return colored_greeting
 
 
@@ -39,14 +42,32 @@ def load_game():
             check = check_difficulty(difficulty)
             if check:
                 if user_input == 1 or user_input == "memory game":
-                    MemoryGame.play(difficulty)
-                    break
+                    game1_result = MemoryGame.play(difficulty)
+                    if game1_result == 1:
+                        print("You won!")
+                        add_score(difficulty)
+                        break
+                    else:
+                        print("You lost :(")
+                        break
                 elif user_input == 2 or user_input == "guess game":
-                    GuessGame.play(difficulty)
-                    break
+                    game2_result = GuessGame.play(difficulty)
+                    if game2_result == 1:
+                        print("You won!")
+                        add_score(difficulty)
+                        break
+                    else:
+                        print("You lost :(")
+                        break
                 elif user_input == 3 or user_input == "currency":
-                    CurrencyRouletteGame.play(difficulty)
-                    break
+                    game3_result = CurrencyRouletteGame.play(difficulty)
+                    if game3_result == 1:
+                        print("You won!")
+                        add_score(difficulty)
+                        break
+                    else:
+                        print("You lost :(")
+                        break
                 else:
                     print("That wasn't a valid choice, try again")
                     print_games()
