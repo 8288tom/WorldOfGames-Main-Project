@@ -1,9 +1,6 @@
 import Utils
 
 
-# Need to go over this function:
-# Each time the user is winning a game, the points he one will be added to his current amount of
-# point saved in a file.
 def add_score(difficulty):
     points_won = (int(difficulty) * 3) + 5
     f = open(Utils.SCORES_FILE_NAME, "a+")
