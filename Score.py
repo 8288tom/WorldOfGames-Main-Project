@@ -17,5 +17,3 @@ def add_score(difficulty):
         f.seek(0)
         f.write(str(points_won))
 
-
-print(add_score(1))
