@@ -6,7 +6,7 @@ from random import randint
 # Generaetes a list and prints to screen
 def generate_sequence(difficulty):
     random_num_list = []
-    clear_terminal = lambda: print('\n' * 15)
+    clear_terminal = lambda: print('\n' * 150000)
     for num in range(1, difficulty + 1):
         rand_num = randint(1, 101)
         print(rand_num)
@@ -38,5 +38,8 @@ def play(difficulty):
     computer_generated_list = generate_sequence(difficulty)
     user_list = get_list_from_user(difficulty)
     result = is_list_equal(computer_generated_list, user_list)
-    return print(
-        f'Won: {result}, numbers you gave: {user_list}, numbers that were displayed: {computer_generated_list}')
+    if result:
+        return 1
+    elif not result:
+        return 0
+

@@ -1,7 +1,7 @@
 import requests as r
 from random import randint
 
-
+# Sends an API call to receieve USD and ILS currency and returns random number, get response and an interval
 def get_money_interval(difficulty):
     to = 'ILS'
     base = 'USD'
@@ -14,21 +14,23 @@ def get_money_interval(difficulty):
     interval = (t - (5 - d), t + (5 - d))
     return interval, request_json, random_num,t
 
-
+# inputs the user for a number
 def get_guess_from_user():
-    guess = int(input("How much do you think the amount is in ILS? "))
+    guess = int(input("How much is it in ILS? "))
     return guess
 
-
+# receives difficulty from Live.py and compares the input vs result
 def play(difficulty):
     api_response = get_money_interval(difficulty)
-    print(f"It's time to guess how many Israeli Shekels is: {api_response[2]}$, "
+    print(f"It's time to guess how many Shekels are: {api_response[2]}$, "
           f"the range of error depends on the difficulty level chosen ")
     guess = get_guess_from_user()
     if api_response[0][0] < guess < api_response[0][1]:
-        return True, print(f"You're right, {api_response[2]}$ is {api_response[3]} in ILS")
+        print(f"You're right, {api_response[2]}$ are {api_response[3]}₪ in ILS")
+        return 1
     else:
-        return False, print(f"Wrong!, the amount in ILS is: {api_response[3]}")
+        print(f"Wrong!, the amount in ILS is: {api_response[3]}")
+        return 0
 
 
 
