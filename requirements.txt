@@ -1,4 +1,4 @@
-
-
+# Install pyfiglet
+# Install flask
 # install time
 # install requests
