@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask
 from Utils import SCORES_FILE_NAME
 
 app = Flask("something")
@@ -31,4 +31,4 @@ def score_server():
 
 
 
-app.run(host="0.0.0.0", port=5001, debug=True)
+app.run(host="0.0.0.0", port=8777, debug=True)
