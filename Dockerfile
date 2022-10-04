@@ -6,6 +6,7 @@ COPY ./MainScores.py ./Utils.py /app/
 COPY ./Scores.txt /Scores.txt 
 
 RUN pip install flask
+RUN pip install selenium
 
 EXPOSE 80
 EXPOSE 8777
