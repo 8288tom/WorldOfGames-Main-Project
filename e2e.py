@@ -6,7 +6,7 @@ from time import sleep
 
 
 def test_scores_service(url):
-    my_drive = webdriver.Chrome("C:/Users/tom.shaked/Downloads/chromedriver.exe")
+    my_drive = webdriver.Chrome()
     my_drive.get(url)
     WebDriverWait(my_drive, 15).until(
         EC.element_to_be_clickable(
@@ -23,7 +23,7 @@ def test_scores_service(url):
 
 
 def main_function():
-    result = test_scores_service("http://127.0.0.1:5001")
+    result = test_scores_service("http://127.0.0.1:8777")
     if result is True:
         return 0
     if result is False:
