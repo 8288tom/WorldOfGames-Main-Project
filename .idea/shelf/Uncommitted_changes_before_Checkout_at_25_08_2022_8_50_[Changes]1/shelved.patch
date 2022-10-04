@@ -1,0 +1,14 @@
+Index: MainScores.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from flask import Flask, request\r\nfrom Utils import SCORES_FILE_NAME\r\n\r\napp = Flask(\"something\")\r\nwith open(SCORES_FILE_NAME, 'r') as f:\r\n    SCORE = f.readline()\r\n\r\n\r\n@app.route('')\r\ndef my_func():\r\n    body = f'<html><head><title>Scores Game</title></head><body><h1>The score is <div id=\"score\">{SCORE}</div></h1></body></html>'\r\n    return body\r\n\r\n\r\napp.run(host=\"0.0.0.0\", port=5001, debug=False)\r\n
+===================================================================
+diff --git a/MainScores.py b/MainScores.py
+--- a/MainScores.py	
++++ b/MainScores.py	
+@@ -1,4 +1,4 @@
+-from flask import Flask, request
++from flask import Flask
+ from Utils import SCORES_FILE_NAME
+ 
+ app = Flask("something")

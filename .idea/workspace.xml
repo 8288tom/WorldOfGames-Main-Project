@@ -47,7 +47,7 @@
       <recent name="C:\Users\tom.shaked\PycharmProjects\WorldOfGames" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainScores (1)">
+  <component name="RunManager" selected="Python.MainScores">
     <configuration name="CurrencyRouletteGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MainScores (1)" />
         <item itemvalue="Python.MainScores" />
+        <item itemvalue="Python.MainScores (1)" />
         <item itemvalue="Python.e2e" />
         <item itemvalue="Python.MainGame" />
         <item itemvalue="Python.CurrencyRouletteGame" />
@@ -214,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664567730974</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updating">
+      <created>1664568182986</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664568182986</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
