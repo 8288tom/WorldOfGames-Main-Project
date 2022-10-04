@@ -6,7 +6,7 @@ COPY ./MainScores.py ./Utils.py ./Scores.txt /app/
 
 RUN pip install flask
 RUN pip install selenium
-RUN pip install chromedriver-autoinstaller
+RUN pip install install webdriver-manager
 
 EXPOSE 80
 EXPOSE 8777
