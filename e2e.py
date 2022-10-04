@@ -2,11 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import chromedriver_autoinstaller
 from time import sleep
 
+chromedriver_autoinstaller.install()
 
 def test_scores_service(url):
-    my_drive = webdriver.Chrome("C:/Users/tom.shaked/Downloads/chromedriver.exe")
+    my_drive = webdriver.Chrome()
     my_drive.get(url)
     WebDriverWait(my_drive, 15).until(
         EC.element_to_be_clickable(
