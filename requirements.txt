@@ -1,5 +1,4 @@
-# Install pyfiglet
-# Install flask
-# install time
-# install requests
-# install selenium
+pyfiglet
+flask
+requests
+selenium
