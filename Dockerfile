@@ -7,6 +7,7 @@ COPY ./Scores.txt /Scores.txt
 
 RUN pip install flask
 RUN pip install selenium
+RUN pip install chromedriver-autoinstaller
 
 EXPOSE 80
 EXPOSE 8777
