@@ -7,10 +7,10 @@ node {
         bat "dir"
     }
     stage("build image"){
-      bat "docker build --no-cache -t worldofgamesimg ." 
+        bat "docker build --no-cache -t worldofgamesimg ." 
     }
     stage("run image"){
-    bat "docker run -p 8777:8777 -d worldofgamesimg"
+        bat "docker run -p 8777:8777 -d worldofgamesimg"
   }
     stage("run test"){
         bat "python e2e.py"
