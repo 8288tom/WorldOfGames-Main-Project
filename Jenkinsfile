@@ -1,18 +1,18 @@
 properties([pipelineTriggers([pollSCM('* * * * *')])])
 node {
-    stage("clone"){
+    stage("Checkout"){
         git "https://github.com/8288tom/WorldOfGames-Main-Project.git"
     }
     stage("show files"){
         bat "dir"
     }
-    stage("build image"){
+    stage("build"){
         bat "docker build --no-cache -t worldofgamesimg ." 
     }
-    stage("run image"){
+    stage("run"){
         bat "docker run -p 8777:8777 -d worldofgamesimg"
   }
-    stage("run test"){
+    stage("test"){
         bat "python e2e.py"
     }   
 }
