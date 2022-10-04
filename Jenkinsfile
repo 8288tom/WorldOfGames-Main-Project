@@ -10,6 +10,6 @@ node {
       bat "docker build --no-cache -t worldofgamesimg ." 
     }
   stage("run image"){
-    bat "docker run -d WorldOfGamesImg"
+    bat "docker run -d worldofgamesimg"
   }
 }
