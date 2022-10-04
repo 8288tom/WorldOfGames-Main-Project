@@ -1,5 +1,5 @@
 version: "3.3"
 services:
   WorldOfGames:
-    image: "8288tom/WorldOfGamesImg:latest"
+    image: "8288tom/worldofgamesimg:latest"
 
