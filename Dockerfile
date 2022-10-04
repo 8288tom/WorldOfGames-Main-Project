@@ -8,5 +8,6 @@ COPY ./Scores.txt /Scores.txt
 RUN pip install flask
 
 EXPOSE 80
+EXPOSE 8777
 
 CMD ["python", "/app/MainScores.py"]
