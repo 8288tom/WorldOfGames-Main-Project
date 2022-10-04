@@ -5,7 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import chromedriver_autoinstaller
 from time import sleep
 
-chromedriver_autoinstaller.install()
+
+install=chromedriver_autoinstaller.install()
 
 def test_scores_service(url):
     my_drive = webdriver.Chrome()

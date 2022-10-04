@@ -47,7 +47,7 @@
       <recent name="C:\Users\tom.shaked\PycharmProjects\WorldOfGames" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainScores">
+  <component name="RunManager" selected="Python.e2e">
     <configuration name="CurrencyRouletteGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +153,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.e2e" />
         <item itemvalue="Python.MainScores" />
         <item itemvalue="Python.MainScores (1)" />
-        <item itemvalue="Python.e2e" />
         <item itemvalue="Python.MainGame" />
         <item itemvalue="Python.CurrencyRouletteGame" />
       </list>
@@ -228,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664906554277</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updating">
+      <created>1664911033091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664911033091</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
