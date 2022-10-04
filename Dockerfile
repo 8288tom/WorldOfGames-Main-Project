@@ -2,8 +2,7 @@ FROM python:3-alpine
 
 WORKDIR /app
 
-COPY ./MainScores.py ./Utils.py /app/
-COPY ./Scores.txt /Scores.txt 
+COPY ./MainScores.py ./Utils.py ./Scores.txt /app/
 
 RUN pip install flask
 RUN pip install selenium
