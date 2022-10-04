@@ -25,7 +25,7 @@ def test_scores_service(url):
 
 
 def main_function():
-    result = test_scores_service("http://127.0.0.1:5001")
+    result = test_scores_service("http://127.0.0.1:8777")
     if result is True:
         return 0
     if result is False:
