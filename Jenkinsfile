@@ -8,7 +8,7 @@ node {
     }
     stage("build image"){
       bat "docker build --no-cache -t WorldOfGamesImg" .
-        }
+    }
   stage("run image"){
     bat "docker run -d WorldOfGamesImg"
   }
