@@ -19,7 +19,7 @@ node {
         bat "python e2e.py"
     }
     stage("finalize"){
-        bat "docker kill shlomo"
+        bat "docker rm -f shlomo"
         bat "docker login"
         bat "docker tag worldofgamesimg 8288tom/worldofgamesimg:latest" 
         bat "docker image  push 8288tom/worldofgamesimg:latest" 
