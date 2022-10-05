@@ -20,7 +20,6 @@ node {
     }
     stage("finalize"){
         bat "docker login"
-        bat "docker kill container shlomo"
         bat "docker tag worldofgamesimg 8288tom/worldofgamesimg:latest" 
         bat "docker image  push 8288tom/worldofgamesimg:latest" 
     }
