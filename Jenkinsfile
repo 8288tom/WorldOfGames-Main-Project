@@ -18,7 +18,6 @@ node {
     stage("test"){
         bat "python e2e.py"
     }
-    {
     stage("finalize"){
         bat "docker login"
         bat "docker kill container shlomo"
