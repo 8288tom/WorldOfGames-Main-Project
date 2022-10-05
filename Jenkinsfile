@@ -12,7 +12,7 @@ node {
     stage("run"){
         bat "docker run -p 8777:8777 -d worldofgamesimg"
     }
-    stage("install package){
+    stage("install package"){
         bat "pip install webdriver-manager"
     } 
     stage("test"){
